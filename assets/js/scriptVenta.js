@@ -30,13 +30,33 @@ const p_venta = [
     pets: true
     },
     {
-    nombre: 'Apartamento de lujo en zona exclusiva',
-    src: 'https://fotos.perfil.com/2018/09/21/trim/950/534/nueva-york-09212018-366965.jpg',
-    descripcion: 'Este apartamento de lujo está ubicado en una exclusiva zona residencial',
-    ubicacion: '123 Luxury Lane, Prestige Suburb, CA 45678',
-    habitaciones: ["4 Habitaciones", "4 Baños"] ,
-    costo: 5000,
+    nombre: 'Mansión de Lujo Emiratos Árabes',
+    src: '../assets/img/house1.jpg',
+    descripcion: 'Esta mansión se emplaza en la zona más explusiva del país',
+    ubicacion: '9988 United Nations, Down Suburb',
+    habitaciones: ["6 Habitaciones", "6 Baños"] ,
+    costo: 15000,
     smoke: false,
+    pets: false
+    },
+    {
+    nombre: 'Penthouse zona costera',
+    src: '../assets/img/house2.jpg',
+    descripcion: 'Esta pentouse cuenta con piscina y cancha de tenis',
+    ubicacion: '9563 Lincoln Park, Downtown',
+    habitaciones: ["6 Habitaciones", "6 Baños"] ,
+    costo: 13000,
+    smoke: true,
+    pets: true
+    },
+    {
+    nombre: 'Casa barrio alto estandares de lujo',
+    src: '../assets/img/house3.jpg',
+    descripcion: 'Esta casa se ubica en el mejor sector del país',
+    ubicacion: '2389 John Doe, TX 67543',
+    habitaciones: ["3 Habitaciones", "2 Baños"] ,
+    costo: 21000,
+    smoke: true,
     pets: false
     }
     ]

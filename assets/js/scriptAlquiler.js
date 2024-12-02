@@ -30,13 +30,33 @@ const p_alquiler = [
     pets: false
     },
     {
-    nombre: 'Apartamento en el centro de la ciudad',
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60',
-    descripcion: 'Este apartamento de 2 habitaciones está ubicado en el corazón de la ciudad, cerca de todo.',
-    ubicacion: '123 Main Street, Anytown, CA 91234',
-    habitaciones: ["2 Habitaciones", "2 Baños"] ,
-    costo: 2000,
-    smoke: false,
+    nombre: 'Apartamento de lujo en zona costera',
+    src: '../assets/img/beach_flat.jpg',
+    descripcion: 'Este apartamento cuenta con las mejores vistas de la ciudad',
+    ubicacion: '1410 NE Miami, South Beach, MI 31312',
+    habitaciones: ["5 Habitaciones", "5 Baños"] ,
+    costo: 10000,
+    smoke: true,
+    pets: false
+    },
+    {
+    nombre: 'Apartamento grande en el centro de la ciudad',
+    src: '../assets/img/big_flat.jpg',
+    descripcion: 'Este apartamento cuenta con 1000 mt cuadrado útiles',
+    ubicacion: '1555 SW Benjamin Franklin St',
+    habitaciones: ["4 Habitaciones", "3 Baños"] ,
+    costo: 8000,
+    smoke: true,
+    pets: true
+    },
+    {
+    nombre: 'Apartamento de lujo en zona exclusiva',
+    src: '../assets/img/luxury_flat.jpg',
+    descripcion: 'Este apartamento de lujo cuenta con las habitaciones temáticas más llamativas',
+    ubicacion: '1120 SE President Kennedy Dr',
+    habitaciones: ["4 Habitaciones", "4 Baños"] ,
+    costo: 12000,
+    smoke: true,
     pets: true
     }
     ]

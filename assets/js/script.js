@@ -30,13 +30,33 @@ const p_venta = [
     pets: true
     },
     {
-    nombre: 'Apartamento de lujo en zona exclusiva',
-    src: 'https://fotos.perfil.com/2018/09/21/trim/950/534/nueva-york-09212018-366965.jpg',
-    descripcion: 'Este apartamento de lujo está ubicado en una exclusiva zona residencial',
-    ubicacion: '123 Luxury Lane, Prestige Suburb, CA 45678',
-    habitaciones: ["4 Habitaciones", "4 Baños"] ,
-    costo: 5000,
+    nombre: 'Mansión de Lujo Emiratos Árabes',
+    src: '../assets/img/house1.jpg',
+    descripcion: 'Esta mansión se emplaza en la zona más explusiva del país',
+    ubicacion: '9988 United Nations, Down Suburb',
+    habitaciones: ["6 Habitaciones", "6 Baños"] ,
+    costo: 15000,
     smoke: false,
+    pets: false
+    },
+    {
+    nombre: 'Penthouse zona costera',
+    src: '../assets/img/house2.jpg',
+    descripcion: 'Esta pentouse cuenta con piscina y cancha de tenis',
+    ubicacion: '9563 Lincoln Park, Downtown',
+    habitaciones: ["6 Habitaciones", "6 Baños"] ,
+    costo: 13000,
+    smoke: true,
+    pets: true
+    },
+    {
+    nombre: 'Casa barrio alto estandares de lujo',
+    src: '../assets/img/house3.jpg',
+    descripcion: 'Esta casa se ubica en el mejor sector del país',
+    ubicacion: '2389 John Doe, TX 67543',
+    habitaciones: ["3 Habitaciones", "2 Baños"] ,
+    costo: 21000,
+    smoke: true,
     pets: false
     }
     ]
@@ -80,6 +100,36 @@ const p_alquiler = [
     habitaciones: ["2 Habitaciones", "2 Baños"] ,
     costo: 2000,
     smoke: false,
+    pets: true
+    },
+    {
+    nombre: 'Apartamento de lujo en zona costera',
+    src: '../assets/img/beach_flat.jpg',
+    descripcion: 'Este apartamento cuenta con las mejores vistas de la ciudad',
+    ubicacion: '1410 NE Miami, South Beach, MI 31312',
+    habitaciones: ["5 Habitaciones", "5 Baños"] ,
+    costo: 10000,
+    smoke: true,
+    pets: false
+    },
+    {
+    nombre: 'Apartamento grande en el centro de la ciudad',
+    src: '../assets/img/big_flat.jpg',
+    descripcion: 'Este apartamento cuenta con 1000 mt cuadrado útiles',
+    ubicacion: '1555 SW Benjamin Franklin St',
+    habitaciones: ["4 Habitaciones", "3 Baños"] ,
+    costo: 8000,
+    smoke: true,
+    pets: true
+    },
+    {
+    nombre: 'Apartamento de lujo en zona exclusiva',
+    src: '../assets/img/luxury_flat.jpg',
+    descripcion: 'Este apartamento de lujo cuenta con las habitaciones temáticas más llamativas',
+    ubicacion: '1120 SE President Kennedy Dr',
+    habitaciones: ["4 Habitaciones", "4 Baños"] ,
+    costo: 12000,
+    smoke: true,
     pets: true
     }
     ]
