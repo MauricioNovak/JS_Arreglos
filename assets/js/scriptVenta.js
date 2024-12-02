@@ -42,9 +42,9 @@ const p_venta = [
     {
     nombre: 'Penthouse zona costera',
     src: '../assets/img/house2.jpg',
-    descripcion: 'Esta pentouse cuenta con piscina y cancha de tenis',
+    descripcion: 'Esta penthouse cuenta con piscina y cancha de tenis',
     ubicacion: '9563 Lincoln Park, Downtown',
-    habitaciones: ["6 Habitaciones", "6 Baños"] ,
+    habitaciones: ["6 Habitaciones", "5 Baños"] ,
     costo: 13000,
     smoke: true,
     pets: true
