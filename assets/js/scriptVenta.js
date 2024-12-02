@@ -41,109 +41,29 @@ const p_venta = [
     }
     ]
 
-    const cartaVenta = document.getElementById("cartaVenta")
+    const cartaVenta = document.getElementById("cartaVenta")    
 
     for (const property of p_venta) {
-        if(property.smoke === true && property.pets === true){
-            cartaVenta.innerHTML += `<div class="col-md-4 mb-4">
-            <div class="card">
-            <img src=${property.src} class="card-img-top" alt=${property.nombre}/>
-            <div class="card-body">
-            <h5 class="card-title">
-            ${property.nombre}
-            </h5>
-            <p class="card-text">
-            ${property.descripcion}
-            </p>
-            <p>
-            <i class="fas fa-map-marker-alt"></i> ${property.ubicacion}
-            </p>
-            <p>
-            <i class="fas fa-bed"></i> ${property.habitaciones[0]} |
-            <i class="fas fa-bath"></i> ${property.habitaciones[1]}
-            </p>
-            <p><i class="fas fa-dollar-sign"></i> ${property.costo}</p>
-            <p class="text-success"> <i class="fas fa-smoking"></i> Permitido fumar</p>
-            <p class="text-success"><i class="fas fa-paw"></i> Mascotas permitidas</p>
+        cartaVenta.innerHTML += `
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="${property.src}" class="card-img-top" alt="${property.nombre}"/>
+                    <div class="card-body">
+                        <h5 class="card-title">${property.nombre}</h5>
+                        <p class="card-text">${property.descripcion}</p>
+                        <p><i class="fas fa-map-marker-alt"></i> ${property.ubicacion}</p>
+                        <p><i class="fas fa-bed"></i> ${property.habitaciones[0]} | <i class="fas fa-bath"></i> ${property.habitaciones[1]}</p>
+                        <p><i class="fas fa-dollar-sign"></i> ${property.costo}</p>
+                        <p class="${property.smoke ? 'text-success' : 'text-danger'}">
+                            <i class="fas ${property.smoke ? 'fa-smoking' : 'fa-smoking-ban'}"></i>
+                            ${property.smoke ? 'Permitido fumar' : 'No se permite fumar'}
+                        </p>
+                        <p class="${property.pets ? 'text-success' : 'text-danger'}">
+                            <i class="fas ${property.pets ? 'fa-paw' : 'fa-ban'}"></i>
+                            ${property.pets ? 'Mascotas permitidas' : 'No se permiten mascotas'}
+                        </p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
-                `
-        }else if(property.smoke === true && property.pets === false){
-            cartaVenta.innerHTML += `<div class="col-md-4 mb-4">
-            <div class="card">
-            <img src=${property.src} class="card-img-top" alt=${property.nombre}/>
-            <div class="card-body">
-            <h5 class="card-title">
-            ${property.nombre}
-            </h5>
-            <p class="card-text">
-            ${property.descripcion}
-            </p>
-            <p>
-            <i class="fas fa-map-marker-alt"></i> ${property.ubicacion}
-            </p>
-            <p>
-            <i class="fas fa-bed"></i> ${property.habitaciones[0]} |
-            <i class="fas fa-bath"></i> ${property.habitaciones[1]}
-            </p>
-            <p><i class="fas fa-dollar-sign"></i> ${property.costo}</p>
-            <p class="text-success"> <i class="fas fa-smoking"></i> Permitido fumar</p>
-            <p class="text-danger"><i class="fa-solid fa-ban"></i> No se permiten mascotas</p>
-            </div>
-            </div>
-        </div>
-                `
-
-        }else if(property.smoke === false && property.pets === true){
-            cartaVenta.innerHTML += `<div class="col-md-4 mb-4">
-            <div class="card">
-                <img src=${property.src} class="card-img-top" alt=${property.nombre}/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                    ${property.nombre}
-                    </h5>
-                    <p class="card-text">
-                    ${property.descripcion}
-                    </p>
-                    <p>
-                    <i class="fas fa-map-marker-alt"></i> ${property.ubicacion}
-                    </p>
-                    <p>
-                    <i class="fas fa-bed"></i> ${property.habitaciones[0]} |
-                    <i class="fas fa-bath"></i> ${property.habitaciones[1]}
-                    </p>
-                    <p><i class="fas fa-dollar-sign"></i> ${property.costo}</p>
-                    <p class="text-danger"><i class="fas fa-smoking-ban"></i> No se permite fumar</p>
-                    <p class="text-success"><i class="fas fa-paw"></i> Mascotas permitidas</p>
-                </div>
-                </div>
-                </div>
-                `
-        }else{
-            cartaVenta.innerHTML += `<div class="col-md-4 mb-4">
-            <div class="card">
-                <img src=${property.src} class="card-img-top" alt=${property.nombre}/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                    ${property.nombre}
-                    </h5>
-                    <p class="card-text">
-                    ${property.descripcion}
-                    </p>
-                    <p>
-                    <i class="fas fa-map-marker-alt"></i> ${property.ubicacion}
-                    </p>
-                    <p>
-                    <i class="fas fa-bed"></i> ${property.habitaciones[0]} |
-                    <i class="fas fa-bath"></i> ${property.habitaciones[1]}
-                    </p>
-                    <p><i class="fas fa-dollar-sign"></i> ${property.costo}</p>
-                    <p class="text-danger"><i class="fas fa-smoking-ban"></i> No se permite fumar</p>
-                    <p class="text-danger"><i class="fa-solid fa-ban"></i> No se permiten mascotas</p>
-                </div>
-                </div>
-                </div>
-                `
-        }
+        `;
     }
